@@ -13,7 +13,7 @@
       <% RESTAURANT.menu.forEach(element => { %>
         <% if (element.category === 'mains'){ %>
           <h4><%= element.name %> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i> PRICE : $ <%= element.price %> </i></h4>
-          <h4>Rating : <%= element.rating %></h4>
+          <h4>Rating : <%= element.rating %> <%if(element.rating === 5){%>⭐<%}%></h4>
           <%= element.details %>
           <hr style="border: none; border-top: 3px dotted #ccc; height: 1px; margin: 20px 0;">
         <% } %>
@@ -24,7 +24,7 @@
       <% RESTAURANT.menu.forEach(element => { %>
         <% if (element.category === 'desserts'){ %>
           <h4><%= element.name %> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i> PRICE : $ <%= element.price %> </i></h4>
-          <h4>Rating : <%= element.rating %></h4>
+          <h4>Rating : <%= element.rating %> <%if(element.rating === 5){%>⭐<%}%></h4>
           <%= element.details %>
           <hr style="border: none; border-top: 3px dotted #ccc; height: 1px; margin: 20px 0;">
         <% } %>
@@ -35,7 +35,7 @@
       <% RESTAURANT.menu.forEach(element => { %>
         <% if (element.category === 'sides'){ %>
           <h4><%= element.name %> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <i> PRICE : $ <%= element.price %> </i></h4>
-          <h4>Rating : <%= element.rating %></h4>
+          <h4>Rating : <%= element.rating %> <%if(element.rating === 5){%>⭐<%}%></h4>
           <%= element.details %>
           <hr style="border: none; border-top: 3px dotted #ccc; height: 1px; margin: 20px 0;">
         <% } %>

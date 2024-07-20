@@ -64,7 +64,6 @@ app.get('/menu', (req, res) => {
 app.get('/menu/:category', (req, res) => {
   menuItems = RESTAURANT.menu.filter((item) => item.category === `${req.params.category}`);
   category = capitalizeFirstLetter(`${req.params.category}`);
-  console.log(category);
   res.render(`${req.params.category}`, { menuItems, category});
 });
 app.listen(3000)
